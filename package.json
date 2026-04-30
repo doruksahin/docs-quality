@@ -1,0 +1,60 @@
+{
+  "name": "docs-quality",
+  "version": "0.1.0",
+  "description": "CLAUDE.md quality linter — deterministic anti-pattern detection + generation-gap scoring for monorepos.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/cli/index.js",
+  "types": "./dist/cli/index.d.ts",
+  "bin": {
+    "docs-quality": "./bin/docs-quality.mjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doruksahin98/docs-quality.git"
+  },
+  "homepage": "https://github.com/doruksahin98/docs-quality#readme",
+  "bugs": {
+    "url": "https://github.com/doruksahin98/docs-quality/issues"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx bin/docs-quality.dev.mts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "mdast-util-to-string": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "ts-morph": "^28.0.0",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  },
+  "keywords": [
+    "claude-md",
+    "linter",
+    "documentation",
+    "monorepo",
+    "ast"
+  ]
+}
