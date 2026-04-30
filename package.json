@@ -18,11 +18,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doruksahin98/docs-quality.git"
+    "url": "git+https://github.com/doruksahin/docs-quality.git"
   },
-  "homepage": "https://github.com/doruksahin98/docs-quality#readme",
+  "homepage": "https://github.com/doruksahin/docs-quality#readme",
   "bugs": {
-    "url": "https://github.com/doruksahin98/docs-quality/issues"
+    "url": "https://github.com/doruksahin/docs-quality/issues"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

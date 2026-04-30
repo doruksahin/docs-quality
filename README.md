@@ -6,12 +6,12 @@ A CLAUDE.md linter for monorepos. Detects the anti-patterns that make LLMs worse
 
 ```bash
 # Global (run anywhere)
-npm install -g github:doruksahin98/docs-quality
+npm install -g github:doruksahin/docs-quality
 # or
-pnpm add -g github:doruksahin98/docs-quality
+pnpm add -g github:doruksahin/docs-quality
 
 # Per-repo dev dep
-pnpm add -D github:doruksahin98/docs-quality
+pnpm add -D github:doruksahin/docs-quality
 ```
 
 After install, the `docs-quality` binary is on your `PATH`. It runs against the git root of `cwd` by default; pass `--codebase /path` to scan elsewhere.
@@ -21,7 +21,7 @@ After install, the `docs-quality` binary is on your `PATH`. It runs against the 
 Working on the linter and want to try it inside another repo without publishing?
 
 ```bash
-git clone https://github.com/doruksahin98/docs-quality.git
+git clone https://github.com/doruksahin/docs-quality.git
 cd docs-quality
 pnpm install
 pnpm build
